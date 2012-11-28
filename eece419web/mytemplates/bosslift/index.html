@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+(function($){
+    $.fn.fixedMenu=function(){
+        return this.each(function(){
+            var menu= $(this);
+            menu.find('ul li > a').bind('click',function(){
+            if ($(this).parent().hasClass('active')){
+                $(this).parent().removeClass('active');
+            }
+            else{
+                $(this).parent().parent().find('.active').removeClass('active');
+                $(this).parent().addClass('active');
+            }
+            })
+        });
+    }
+})(jQuery);
+</script>
+
+
+        <link rel="stylesheet" type="text/css" href="fixedMenu_style2.css" />
+        <script>
+        $('document').ready(function(){
+            $('.menu').fixedMenu();
+        });
+        </script>
+
+
+</head>
+
+<style type="text/css">
+
+
+body{
+    padding:0;
+    margin:0;
+}
+.menu{
+      font: 13px/27px Arial,sans-serif;
+
+      color:#3366CC;
+      height:30px;
+      background: black;
+}
+.menu a:hover{
+    background-color:#e4ebf8;
+    color:black;
+
+}
+.menu a {
+    text-decoration: none;
+    padding: 6px 8px 7px;
+    color:white;
+    outline:none;
+}
+.menu ul{
+    list-style: none;
+    margin:0;
+    padding:0 0 0 10px;
+}
+.menu ul li{
+    padding:0;
+    float:left;
+    
+}
+.menu ul li ul li{
+    padding:0;
+    float:none;
+    margin: 0 0 0 0px;
+    width:100%;
+}
+.menu ul li ul{
+    position: absolute;
+    border: 1px solid #C3D1EC;
+    box-shadow: 0 1px 5px #CCCCCC;
+    margin-top: -1px;
+    display:none;
+    padding: 0px 16px 0px 0;
+}
+.active ul{
+    display:block !important; 
+}
+.active a{
+    background-color: white;
+    border: 1px solid #C3D1EC;
+    border-bottom: 0;
+    box-shadow: 0 -1px 5px #CCCCCC;
+    display: block;
+    height: 29px;
+    padding: 0 8px 0 8px;
+    position:relative;
+    z-index: 1;
+    color:#3366CC;
+
+}
+.active a:hover{
+    background-color:white;
+}
+.active ul a:hover{
+    background-color:#e4ebf8;
+}
+
+.active ul a{
+    border: 0 !important;
+    box-shadow: 0 0 0 #CCCCCC;
+    border:0;
+    width: 100%;
+}
+.arrow {
+    border-color: white transparent transparent;
+    border-style: solid dashed dashed;
+    margin-left: 5px;
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+
+.style8 {
+	background-color: #000000;
+}
+
+
+label
+{
+width: 4em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
+
+.submit input
+{
+margin-left: 4.5em;
+} 
+input	
+{
+color: #781351;
+background: #e4ebf8;
+border: 1px solid #781351
+}
+
+.submit input
+{
+color: black;
+background: white;
+border: 2px outset #d7b9c9
+} 
+.submit input:hover
+{
+color: #3366CC;
+background: #e4ebf8;
+border: 2px outset #d7b9c9
+} 
+.submit input:active
+{
+color: #3366CC;
+background: #e4ebf8;
+border: 2px inset #d7b9c9
+} 
+
+fieldset
+{
+border: 1px solid #781351;
+width: 20em
+}
+
+
+legend
+{
+color: #fff;
+background: black;
+border: 2px solid #781351;
+padding: 2px 6px;
+cursor: pointer;
+
+}
+legend:hover
+{
+background-color:#e4ebf8;
+color:black;
+
+border: 2px solid #781351;
+padding: 2px 6px;
+cursor: pointer;
+}
+
+.style10 {
+	font-size: small;
+}
+
+.style11 {
+	color: #FFFFFF;
+}
+
+</style>
+
+
+
+
+<body style="margin-top: 0;">
+
+<table style="width: 100%" class="style8">
+	<tr>
+		<td>
+		<h1 id="site-name" style="font-weight: normal; font-size: 18px; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; margin-top: 8px; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; font-family: 'Lucida Grande', 'DejaVu Sans', 'Bitstream Vera Sans', Verdana, Arial, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;  " class="style11">
+		BOSSLIFT</h1>
+		</td>
+	</tr>
+</table>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">Main<span class="arrow"></span></a>
+                
+                <ul>
+                    <li><a href="http://pod7.alwaysdata.net">Main Page</a></li>
+                    <li><a href="http://pod7.alwaysdata.net">Main Page</a></li>
+                    <li><a href="http://pod7.alwaysdata.net">Main Page</a></li>
+                    <li><a href="http://pod7.alwaysdata.net">Main Page</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Statistics<span class="arrow"></span></a>
+                <ul>
+                    <li><a href="#">Something</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="/logout">Log out</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+<br><br>
+<table style="width: 100%">
+	<tr>
+		<td style="width:33%" valign="top">
+		<fieldset>
+<legend onclick="toggle('11');">Simulation Setup<span id="arrow11" class="arrow" style='display:;'></span></legend>
+<div id="form11" style='display:;'>
+
+<table style="width: 100%">
+	<tr>
+		<td>Server Address</td>
+		<td>{{ address }}</td>
+	</tr>
+	<tr>
+		<td style="height: 61px">Number of Elevators</td>
+		<td style="height: 61px">{{ n_of_elevators }}</td>
+	</tr>
+	<tr>
+		<td>Number of Floors</td>
+		<td>{{ n_of_floors }}</td>
+	</tr>
+</table>
+
+</div>
+</fieldset>
+
+</td>
+		<td style="width:33%" valign="top">
+		<fieldset>
+<legend onclick="toggle('12');">Elevator Status<span id="arrow12" class="arrow"></span></legend>
+<div id="form12" style='display:;'>
+<iframe name="I5" id="I5" src="elevatorstatus.html" style="width: 100%; height: 100%" frameborder="no">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
+</div>
+</fieldset>
+
+</td>
+<td style="width:33%" valign="top">
+<fieldset>
+<legend onclick="toggle('13');">Elevator Position<span id="arrow13" class="arrow"></span></legend>
+<div id="form13" style='display:;'>
+<iframe name="I4" id="I4" src="elevatorposition.html" style="width: 100%; height: 100%" frameborder="no">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
+
+</div>
+</fieldset>
+</td>
+
+</tr>
+</table>
+	
+	
+<table style="width: 100%">
+	<tr>
+		<td style="width:33%" valign="top"><form action="" id="InjectPassenger" method="post">{% csrf_token %}<br />
+&nbsp;<fieldset>
+<legend onclick="toggle('0');">Inject Passenger<span id="arrow0" class="arrow"></span></legend>
+<div id="form0" style='display:none;'>
+<p><label for="name"><span class="style10">From Floor:</span></label> 
+<select id="fromFloor" name="fromFloor" >
+{% for x in floors %}
+<option value="{{ x }}">{{ x }}</option>
+{% endfor %}
+</select></p>
+<p><label for="e-mail"><span class="style10">To Floor:</span></label> 
+<select id="toFloor" name="toFloor" >
+{% for x in floors %}
+<option value="{{ x }}">{{ x }}</option>
+{% endfor %}
+</select><br /></p>
+<p class="submit"><input type="submit" value="InjectPassenger" /></p>
+</div>
+</fieldset>
+</form>
+</td>
+		<td style="width:33%" valign="top"><form action="" id="ChooseAlgorithm" method="post">{% csrf_token %}<br />
+&nbsp;<fieldset>
+<legend onclick="toggle('1');">Choose Algorithm<span id="arrow1" class="arrow"></span></legend>
+<div id="form1" style='display:none;'>
+<p><label for="name"><span class="style10">Algorithm:</span></label> </p>
+<p><select id="Algorithm">
+<option value="0">SCAN</option>
+<option value="1">Round Robin</option>
+<option value="2">Closest Elevator</option>
+<option value="3">PassengerModE</option>
+<option value="4">Random Elevator</option>
+<option value="5">Balanced Service</option>
+<option value="6">Least Busy</option>
+</select></p>
+<p class="submit"><input type="submit" value="Choose" /></p>
+</div>
+</fieldset>
+</form>
+</td>
+		<td style="width:33%" valign="top"><form action="" id="InjectFault" method="post">{% csrf_token %}<br />
+&nbsp;<fieldset>
+<legend onclick="toggle('2');">Inject Fault<span id="arrow2" class="arrow"></span></legend>
+<div id="form2" style='display:none;'>
+<p><label for="name"><span class="style10">Elevator:</span></label> 
+<select id="elevator" name="elevator" >
+{% for x in elevators %}
+<option value="{{ x }}">{{ x }}</option>
+{% endfor %}
+</select>
+</p>
+
+<p><label for="name"><span class="style10">Fault:</span></label> 
+<select id="fault" name="fault" >
+<option value="0">Maintenance</option>
+<option value="1">Passenger Emergency</option>
+<option value="0">Sensor Fault</option>
+</select>
+</p>
+<p class="submit"><input type="submit" value="InjectFault" /></p>
+</div>
+</fieldset>
+</form>
+</td>
+	</tr>
+	
+</table>
+
+
+
+<script>
+
+$.ajaxSetup({
+  data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+});
+
+
+  
+  
+  /* attach a submit handler to the form */
+  $("#InjectPassenger").submit(function(event) {
+
+    /* stop form from submitting normally */
+    event.preventDefault(); 
+        
+    /* get some values from elements on the page: */
+    var $form = $( this ),
+        fromFloor = $form.find( 'select[id="fromFloor"]' ).val(),
+        toFloor = $form.find( 'select[id="toFloor"]' ).val(),
+        url = $form.attr( 'action' );
+
+    /* Send the data using post and put the results in a div */
+    $.post("{{ address }}", { request: 'InjectPassenger', arg0: fromFloor, arg1: toFloor },
+      function( data ) {
+          var content = $( data ).find( '#content' );
+          //$( "#result" ).empty().append( content );
+      }
+    );
+  });
+ 
+  
+    /* attach a submit handler to the form */
+  $("#ChooseAlgorithm").submit(function(event) {
+
+    /* stop form from submitting normally */
+    event.preventDefault(); 
+        
+    /* get some values from elements on the page: */
+    var $form = $( this ),
+        Algorithm = $form.find( 'select[id="Algorithm"]' ).val(),
+        //toFloor = $form.find( 'input[id="toFloor"]' ).val(),
+        url = $form.attr( 'action' );
+
+    /* Send the data using post and put the results in a div */
+    $.post("{{ address }}", { request: 'ChooseAlgorithm', arg0: Algorithm },
+      function( data ) {
+          var content = $( data ).find( '#content' );
+          //$( "#result" ).empty().append( content );
+      }
+    );
+  });
+
+
+    /* attach a submit handler to the form */
+  $("#InjectFault").submit(function(event) {
+
+    /* stop form from submitting normally */
+    event.preventDefault(); 
+        
+    /* get some values from elements on the page: */
+    var $form = $( this ),
+        elevator = $form.find( 'select[id="elevator"]' ).val(),
+        fault = $form.find( 'select[id="fault"]' ).val(),
+        url = $form.attr( 'action' );
+
+    /* Send the data using post and put the results in a div */
+    $.post("{{ address }}", { request: 'InjectFault', arg0: elevator, arg1: fault },
+      function( data ) {
+          var content = $( data ).find( '#content' );
+          //$( "#result" ).empty().append( content );
+      }
+    );
+  });
+
+
+    /* attach a submit handler to the form */
+  $("#InjectFault1").submit(function(event) {
+
+    /* stop form from submitting normally */
+    event.preventDefault(); 
+        
+    /* get some values from elements on the page: */
+    var $form = $( this ),
+        Fault = $form.find( 'input[id="fault"]' ).val(),
+        //toFloor = $form.find( 'input[id="toFloor"]' ).val(),
+        url = $form.attr( 'action' );
+
+    /* Send the data using post and put the results in a div */
+    $.post("{{ address }}", { request: 'InjectFault', arg0: Fault },
+      function( data ) {
+          var content = $( data ).find( '#content' );
+          //$( "#result" ).empty().append( content );
+      }
+    );
+  });
+
+    /* attach a submit handler to the form */
+  $("#InjectFault2").submit(function(event) {
+
+    /* stop form from submitting normally */
+    event.preventDefault(); 
+        
+    /* get some values from elements on the page: */
+    var $form = $( this ),
+        Fault = $form.find( 'input[id="fault"]' ).val(),
+        //toFloor = $form.find( 'input[id="toFloor"]' ).val(),
+        url = $form.attr( 'action' );
+
+    /* Send the data using post and put the results in a div */
+    $.post("{{ address }}", { request: 'InjectFault', arg0: Fault },
+      function( data ) {
+          var content = $( data ).find( '#content' );
+          //$( "#result" ).empty().append( content );
+      }
+    );
+  });
+
+  
+      /* attach a submit handler to the form */
+  $("#InjectFault3").submit(function(event) {
+
+    /* stop form from submitting normally */
+    event.preventDefault(); 
+        
+    /* get some values from elements on the page: */
+    var $form = $( this ),
+        Fault = $form.find( 'input[id="fault"]' ).val(),
+        //toFloor = $form.find( 'input[id="toFloor"]' ).val(),
+        url = $form.attr( 'action' );
+
+    /* Send the data using post and put the results in a div */
+    $.post("{{ address }}", { request: 'InjectFault', arg0: Fault },
+      function( data ) {
+          var content = $( data ).find( '#content' );
+          //$( "#result" ).empty().append( content );
+      }
+    );
+  });
+
+  //SHOW & HIDE
+function toggle(x) {
+	if (document.getElementById('form' + x).style.display == '') {
+		document.getElementById('form' + x).style.display = 'none';
+		document.getElementById('arrow' + x).style.display = '';		
+	} else {
+		document.getElementById('form' + x).style.display = '';
+		document.getElementById('arrow' + x).style.display = 'none';	
+	}
+}
+
+	
+</script>
+
+
+<p>&nbsp;</p>
+
+<fieldset style="width: 95%">
+<legend onclick="toggle('18');">Simulation<span id="arrow18" class="arrow" style='display:none;'></span></legend>
+<div id="form18">
+
+<iframe name="I8" id="I8" src="simulation.html" style="width: 100%; height: 80px" frameborder="no">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
+
+
+</div>	
+</fieldset>
+
+<p>&nbsp;</p>
+
+<fieldset style="width: 95%">
+<legend onclick="toggle('19');">Graphical Simulation<span id="arrow19" class="arrow" style='display:none;'></span></legend>
+<div id="form19">
+
+<iframe name="I9" id="I9" src="simulationtable.html" style="width: 100%; height: 500px" frameborder="no">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
+
+
+</div>	
+</fieldset>
+
+<p>&nbsp;</p>
+
+<fieldset style="width: 95%">
+<legend onclick="toggle('15');">Statistics<span id="arrow15" class="arrow" style='display:none;'></span></legend>
+<div id="form15" style='display:;'>
+
+<iframe name="I1" id="I1" src="chart.html" style="width: 100%; height: 700px" frameborder="no">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
+
+
+</div>	
+</fieldset>
+
+<p>&nbsp;</p>
+
+<fieldset style="width: 95%">
+<legend onclick="toggle('10');">Log<span id="arrow10" class="arrow" style='display:none;'></span></legend>
+<div id="form10">
+
+<iframe name="I1" id="I1" src="foot.htm" style="width: 100%; height: 225px" frameborder="no">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
+
+
+</div>	
+</fieldset>
+
+
+
+</body>
+
+</html>
