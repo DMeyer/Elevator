@@ -1,2 +1,1 @@
-Elevator
-========
+This was a group project
